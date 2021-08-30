@@ -30,9 +30,23 @@ namespace Equipamentos.Controllers
             }
         };
         // GET: Categorias
+        public ActionResult Create()
+        {
+            return View();
+        }
+
         public ActionResult Index()
         {
             return View(categorias);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(Categoria categoria)
+        {
+            categoria.CategoriaID = categorias.Select(m => m.CategoriaID).Max() + 1;
+            categorias.Add(categoria);
+            return RedirectToAction("Index");
         }
     }
 }
