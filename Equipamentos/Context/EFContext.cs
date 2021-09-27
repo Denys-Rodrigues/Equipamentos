@@ -13,6 +13,6 @@ namespace Equipamentos.Context
 
         public DbSet<Categoria> categorias { get; set; }
 
-        public DbSet<Fabricante> fabricantes { get; set; }
+        public DbSet<Fabricante> Fabricantes { get; set; }
     }
 }
