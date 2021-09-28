@@ -11,7 +11,7 @@ namespace Equipamentos.Context
     {
         public EFContext(): base("Projeto") { }
 
-        public DbSet<Categoria> categorias { get; set; }
+        public DbSet<Categoria> Categorias { get; set; }
 
         public DbSet<Fabricante> Fabricantes { get; set; }
     }

@@ -25,6 +25,7 @@ namespace Equipamentos.Controllers
             return View();
         }
 
+        // Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(Fabricante fabricante)
@@ -34,6 +35,7 @@ namespace Equipamentos.Controllers
             return RedirectToAction("Index");
         }
 
+        // Edit
         public ActionResult Edit(long? id)
         {
             if (id == null)
@@ -59,6 +61,46 @@ namespace Equipamentos.Controllers
                 return RedirectToAction("Index");
             }
             return View(fabricante);
+        }
+
+        // Details
+        public ActionResult Details(long? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Fabricante fabricante = context.Fabricantes.Find(id);
+            if (fabricante == null)
+            {
+                return HttpNotFound();
+            }
+            return View(fabricante);
+        }
+
+        // Delete
+        public ActionResult Delete(long? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Fabricante fabricante = context.Fabricantes.Find(id);
+            if (fabricante == null)
+            {
+                return HttpNotFound();
+            }
+            return View(fabricante);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Delete(long id)
+        {
+            Fabricante fabricante = context.Fabricantes.Find(id);
+            context.Fabricantes.Remove(fabricante);
+            context.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }

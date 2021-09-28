@@ -121,11 +121,16 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
-    <Content Include="Views\Categorias\Index.cshtml" />
-    <Content Include="Views\Categorias\Create.cshtml" />
     <Content Include="Views\Fabricantes\Index.cshtml" />
     <Content Include="Views\Fabricantes\Create.cshtml" />
     <Content Include="Views\Fabricantes\Edit.cshtml" />
+    <Content Include="Views\Fabricantes\Details.cshtml" />
+    <Content Include="Views\Fabricantes\Delete.cshtml" />
+    <Content Include="Views\Categorias\Index.cshtml" />
+    <Content Include="Views\Categorias\Create.cshtml" />
+    <Content Include="Views\Categorias\Edit.cshtml" />
+    <Content Include="Views\Categorias\Details.cshtml" />
+    <Content Include="Views\Categorias\Delete.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
