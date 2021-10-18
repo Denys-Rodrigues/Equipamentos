@@ -20,6 +20,7 @@ namespace Equipamentos.Controllers
             return View(context2.Categorias.OrderBy(c => c.Nome));
         }
 
+        // Action
         public ActionResult Create()
         {
             return View();
