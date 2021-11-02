@@ -101,6 +101,7 @@ namespace Equipamentos.Controllers
             Categoria categoria = context2.Categorias.Find(id);
             context2.Categorias.Remove(categoria);
             context2.SaveChanges();
+            TempData["Message"] = "Categoria" + categoria.Nome.ToUpper() + "foi removida";
             return RedirectToAction("Index");
         }
     }
