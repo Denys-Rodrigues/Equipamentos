@@ -27,19 +27,26 @@
     </div>
     <div class="panel-footer panel-info">
         @using (Html.BeginForm())
-            {
-                @Html.AntiForgeryToken()
+        {
+            @Html.AntiForgeryToken()
             <input type="submit" value="Remover Fabricante"
                    class="btn btn-danger" />
-                @Html.ActionLink("Retornar para a listagem", "Index", null, 
-               new { @class = "btn btn-info"})
-            }
+            @Html.ActionLink("Retornar para a listagem", "Index", null,
+           new { @class = "btn btn-info" })
+        }
     </div>
 </div>
 
 @section ScriptPage{
     <script src="~/Scripts/jquery.validate.min.js"></script>
     <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('li').removeClass("active");
+            $('#liFabricantes').addClass("active")
+        });
+    </script>
 }
 
 
