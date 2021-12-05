@@ -383,6 +383,7 @@
     <Compile Include="Context\EFContext.cs" />
     <Compile Include="Controllers\CategoriasController.cs" />
     <Compile Include="Controllers\FabricantesController.cs" />
+    <Compile Include="Controllers\ProdutosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -394,9 +395,14 @@
     <Compile Include="Migrations\202109272303332_initial.Designer.cs">
       <DependentUpon>202109272303332_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111230020401_Produto.cs" />
+    <Compile Include="Migrations\202111230020401_Produto.Designer.cs">
+      <DependentUpon>202111230020401_Produto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Categoria.cs" />
     <Compile Include="Models\Fabricante.cs" />
+    <Compile Include="Models\Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -424,6 +430,8 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Produtos\Index.cshtml" />
+    <Content Include="Views\Produtos\Create.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -440,6 +448,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109272303332_initial.resx">
       <DependentUpon>202109272303332_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111230020401_Produto.resx">
+      <DependentUpon>202111230020401_Produto.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

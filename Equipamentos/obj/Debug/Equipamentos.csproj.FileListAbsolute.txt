@@ -82,3 +82,5 @@ D:\DW_Rodrigues_(HD)\3_REGES\4º_Semestre_2021\Sistemas_Web_II\2_Projetos\Aula_0
 D:\DW_Rodrigues_(HD)\3_REGES\4º_Semestre_2021\Sistemas_Web_II\2_Projetos\Aula_02\Equipamentos\Equipamentos\obj\Debug\Equipamentos.csproj.GenerateResource.cache
 D:\DW_Rodrigues_(HD)\3_REGES\4º_Semestre_2021\Sistemas_Web_II\2_Projetos\Aula_02\Equipamentos\Equipamentos\obj\Debug\Equipamentos.Migrations.initial.resources
 D:\DW_Rodrigues_(HD)\3_REGES\4º_Semestre_2021\Sistemas_Web_II\2_Projetos\Aula_02\Equipamentos\Equipamentos\obj\Debug\Equipamentos.csproj.AssemblyReference.cache
+D:\DW_Rodrigues_(HD)\3_REGES\4º_Semestre_2021\Sistemas_Web_II\2_Projetos\Aula_02\Equipamentos\Equipamentos\obj\Debug\Equipamentos.csproj.CopyComplete
+D:\DW_Rodrigues_(HD)\3_REGES\4º_Semestre_2021\Sistemas_Web_II\2_Projetos\Aula_02\Equipamentos\Equipamentos\obj\Debug\Equipamentos.Migrations.Produto.resources
